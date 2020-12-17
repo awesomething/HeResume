@@ -1,0 +1,85 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Here you can find Sally contact information">
+    <title>Sally contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header>
+    <div id="img">
+        <img src="https://media.giphy.com/media/l3fzQpKUN8tVlLBXG/giphy.gif" alt="Malaga Panoramic">
+    </div>
+    <h1 class="title">About me</h1>
+</header>
+<main>
+          <div id="application-root"></div>
+  <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type="text/babel">
+  //Our code will go here
+function App(props) {
+  return (
+    <header>
+      {props.children}
+    </header>
+  );
+}
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App className='my-class'>
+   <section id="introduction">
+    <h1>Hi I'm Sally I'm 35 and below this line you'll find more information about me!</h1>
+   </section>
+  </App>,
+  document.querySelector('#application-root')
+);
+</script>
+    <section id="Education">
+        <p>I studied at:</p>
+        <ul>
+            <li>Thinkful Coding Bootcamp</li>
+            <li>AdValue Private Academy</li>
+        </ul>
+    </section>
+    <br>
+    <section id="works">
+        <p>I have worked at:</p>
+        <div id="works_list">
+            <ul>
+                <li>AutoMattic as Engineer during 2019 and there I had to
+                    edit code and build apps working remotely with a team of five engineers. We had to ship features every 2 weeks.
+                </li>
+                <li>Zoom as Project manager during 2020 and I'm still working there. My work consist in
+                    Ensuring tech team are building app features for better streaming quality and following due process. 
+                </li>
+            </ul>
+        </div>
+    </section>
+    <br>
+    <section id="Contact-section">
+        <p>My contact information: </p>
+        <address id="Contact-info">
+            <p>My name is Sally</p>
+            <p>My email is: <a href="mailto://sally@IntenetExplorer.old">sally@IntenetExplorer.old</a></p>
+            <p>My phone number is: <a href="tel:+34100572415">+34 100 57 24 15</a></p>
+        </address>
+
+    </section>
+</main>
+<footer>Copyright 2021 </footer>
+</body>
+</html>
+
